@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{168971B4-07D8-4B27-96FE-EE50DFDC0CD5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TBS.Win.UI</RootNamespace>
+    <AssemblyName>TBS.Win.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control\EBillingRulesPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\EBillingRulesPage.Designer.cs">
+      <DependentUpon>EBillingRulesPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\EmeterPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\EmeterPage.Designer.cs">
+      <DependentUpon>EmeterPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\EReadingPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\EReadingPage.Designer.cs">
+      <DependentUpon>EReadingPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\FlatPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\FlatPage.Designer.cs">
+      <DependentUpon>FlatPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ReportPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ReportPage.Designer.cs">
+      <DependentUpon>ReportPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\TemplatePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\TemplatePage.Designer.cs">
+      <DependentUpon>TemplatePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\TenantPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\TenantPage.Designer.cs">
+      <DependentUpon>TenantPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\UtilityOptionPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\UtilityOptionPage.Designer.cs">
+      <DependentUpon>UtilityOptionPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\WbillingRulesPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\WbillingRulesPage.Designer.cs">
+      <DependentUpon>WbillingRulesPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\WmeterPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\WmeterPage.Designer.cs">
+      <DependentUpon>WmeterPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\WReadingPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\WReadingPage.Designer.cs">
+      <DependentUpon>WReadingPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWinUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWinUI.Designer.cs">
+      <DependentUpon>frmWinUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Control\EBillingRulesPage.resx">
+      <DependentUpon>EBillingRulesPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\EmeterPage.resx">
+      <DependentUpon>EmeterPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\EReadingPage.resx">
+      <DependentUpon>EReadingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\FlatPage.resx">
+      <DependentUpon>FlatPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ReportPage.resx">
+      <DependentUpon>ReportPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\TemplatePage.resx">
+      <DependentUpon>TemplatePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\TenantPage.resx">
+      <DependentUpon>TenantPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\UtilityOptionPage.resx">
+      <DependentUpon>UtilityOptionPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\WbillingRulesPage.resx">
+      <DependentUpon>WbillingRulesPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\WmeterPage.resx">
+      <DependentUpon>WmeterPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\WReadingPage.resx">
+      <DependentUpon>WReadingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWinUI.resx">
+      <DependentUpon>frmWinUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report1.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ReportDataSet.xsc">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReportDataSet.xss">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\TBS.Domain\TBS.Domain.csproj">
+      <Project>{66AC1532-159F-4BB3-AE0E-19731FD4802C}</Project>
+      <Name>TBS.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
